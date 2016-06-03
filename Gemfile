@@ -27,6 +27,8 @@ gem 'boostrap-sass', '~> 0.0.2'
 
 gem 'simple_form', '~> 3.2', '>= 3.2.1'
 
+gem 'devise', '~> 4.1', '>= 4.1.1'
+
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 
