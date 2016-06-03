@@ -1,9 +1,10 @@
 class PinsController < ApplicationController
   before_action :find_pin, only:[:show, :edit, :update, :destroy]
 
-  def index
-    @pins = Pin.all.order("created_at DESC")
-  end
+  expose(:pins){ Pin.all.order("created_at DESC")}
+  # expose(:pin){current_user.pins.build}
+  # def index
+  # end
 
   def show
   end
@@ -47,4 +48,5 @@ class PinsController < ApplicationController
   def find_pin
     @pin = Pin.find(params[:id])
   end
+
 end
