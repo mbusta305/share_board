@@ -19,11 +19,16 @@
 @import "bootstrap";
 
  body {
- 	background: #E9E9E9;
+ 	background: black;
+  .glyphicon {
+    color: red;
+  }
  }
 
  h1, h2, h3, h4, h5, h6 {
  	font-weight: 100;
+  font-family: 'Rock Salt', cursive;
+  color: #BD1E23;
  }
 
  nav {
@@ -32,6 +37,7 @@
  		a {
  			color: #BD1E23;
  			font-weight: bold;
+      font-family: 'Rock Salt', cursive;
  			&:hover {
  				text-decoration: none;
  			}
@@ -57,7 +63,8 @@
  	  	margin: 0;
  	  	padding: 25px 10px;
  	  	a {
- 				color: #474747;
+ 				color: #BD1E23;
+        font-weight: bold;
  	  	}
  	  }
  	  .user {
